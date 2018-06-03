@@ -12,8 +12,12 @@ void arrays_bidimensionales(int , int);
 //*
 //*
 //****************************************************************
-int main()
-{
+int main() {
+
+    // Asigna la información local del entorno
+    //--------------------------------------------
+    setlocale(LC_ALL, "");  // Acentos, moneda, formato de hora etc., la del entorno por defecto
+
 
     // Declara e inicializa un array
     //----------------------------------
@@ -29,8 +33,8 @@ int main()
     // Declara un puntero y muestra el contenido del aray con su ayuda
     //----------------------------------------------------------------------
     int *ptrInt = edades;
-    cout << "\n\n  ------ Esto es un array[10] y su dirección inicial es:...  " << ptrInt << " ------\n\n";
-    for (int b = 0; b < 10; ++ b) { cout << ptrInt[b] << "  -  "; }
+    cout << "\n\n  ------ Esto es un array[10] y su dirección inicial es:...  " << ptrInt << " ------\n\n  ";
+    for (int b = 0; b < 10; ++ b) { cout << ptrInt[b] << "\t"; }
 
 
     // Función que muestra un array con ayuda de punteros
@@ -70,9 +74,10 @@ void arrays_bidimensionales(int filas, int columnas) {
     // Utiliza un puntero para mostrar los elementos del array
     //-----------------------------------------------------------
     int *ptrInt = array_bi[0];                                      // El primer elemento de las filas es un puntero al primer elemento
-    for (int indice = 0; indice < filas * columnas; indice++) {     //    de la primera columna.
+    cout << "  ";                                                   //    de la primera columna.
+    for (int indice = 0; indice < filas * columnas; indice++) {
 
-        cout << *(ptrInt + indice) << "  -  ";                      // Aunque es un array bidimensional sus elementos están situados
+        cout << *(ptrInt + indice) << "\t  ";                      // Aunque es un array bidimensional sus elementos están situados
                                                                     //    consecutivamente uno a continuación del otro a lo largo de la memoria
     }
 

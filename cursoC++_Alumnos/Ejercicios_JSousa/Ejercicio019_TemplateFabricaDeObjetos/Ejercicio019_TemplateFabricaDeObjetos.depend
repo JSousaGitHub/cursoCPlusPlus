@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1527533459 source:c:\users\tarde\desktop\curso c++\ejercicios\ejercicio019_templatefabricadeobjetos\src\classhijo.cpp
+	"ClassHijo.h"
+
+1527533962 c:\users\tarde\desktop\curso c++\ejercicios\ejercicio019_templatefabricadeobjetos\include\classhijo.h
+	<iostream>
+
+1527535147 source:c:\users\tarde\desktop\curso c++\ejercicios\ejercicio019_templatefabricadeobjetos\src\factoria.cpp
+	"Factoria.h"
+
+1527535254 c:\users\tarde\desktop\curso c++\ejercicios\ejercicio019_templatefabricadeobjetos\include\factoria.h
+	<iostream>
+
+1527533962 source:c:\users\tarde\desktop\curso c++\ejercicios\ejercicio019_templatefabricadeobjetos\src\padre.cpp
+	"Padre.h"
+
+1527535183 c:\users\tarde\desktop\curso c++\ejercicios\ejercicio019_templatefabricadeobjetos\include\padre.h
+	<iostream>
+
+1527611072 source:e:\curso c++\ejercicios\ejercicio019_templatefabricadeobjetos\src\classhijo.cpp
+	"ClassHijo.h"
+
+1527611676 e:\curso c++\ejercicios\ejercicio019_templatefabricadeobjetos\include\classhijo.h
+	<iostream>
+
+1527535148 source:e:\curso c++\ejercicios\ejercicio019_templatefabricadeobjetos\src\factoria.cpp
+	"Factoria.h"
+
+1527903174 e:\curso c++\ejercicios\ejercicio019_templatefabricadeobjetos\include\factoria.h
+	<iostream>
+
+1527530364 source:e:\curso c++\ejercicios\ejercicio019_templatefabricadeobjetos\src\padre.cpp
+	"Padre.h"
+
+1527531584 e:\curso c++\ejercicios\ejercicio019_templatefabricadeobjetos\include\padre.h
+	<iostream>
+
+1527638800 source:e:\curso c++\ejercicios\ejercicio019_templatefabricadeobjetos\src\classpadre.cpp
+	"ClassPadre.h"
+
+1527612330 e:\curso c++\ejercicios\ejercicio019_templatefabricadeobjetos\include\classpadre.h
+	<iostream>
+
+1527970568 source:e:\curso c++\ejercicios\ejercicio019_templatefabricadeobjetos\main.cpp
+	<iostream>
+	<ClassHijo.h>
+	<ClassPadre.h>
+	<Factoria.h>
+

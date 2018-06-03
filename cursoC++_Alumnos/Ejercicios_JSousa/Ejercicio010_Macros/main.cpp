@@ -9,23 +9,26 @@ using namespace std;
 #define FOR(A,B) for(int A = 0; A < B; A++)     // Macro que genera un bucle
 
 
-int main()
-{
+int main() {
+
+    // Asigna la información local del entorno
+    //--------------------------------------------
+    setlocale(LC_ALL, "");  // Acentos, moneda, formato de hora etc., la del entorno por defecto
+
 
     // Uso de la macro NUM_MAX_LINES 20
     //-------------------------------------
     int numeroLineas = NUM_MAX_LINES;                                                                   // El compilador sustituye NUM_MAX_LINES por 20
     cout << "\n Varias formas de utilizar el valor que representa la macro:...  NUM_MAX_LINES 20"
-         << "\n---------------------------------------------
-----------------------------------------"
-         << "\n " << numeroLineas
-         << "\n " << numeroLineas
-         << "  -  " << NUM_MAX_LINES << endl;                                                           // También se puede así
+         << "\n-------------------------------------------------------------------------------------"
+         << "\n  int numeroLineas = NUM_MAX_LINES; "
+         << "\n  numeroLineas :... " << numeroLineas
+         << "\n  NUM_MAX_LINES :... " << NUM_MAX_LINES
+         << "\n  NUM_MAX_LINES + 2 :... " << NUM_MAX_LINES + 2 << endl;                                  // Podemos operar sobre la macro (sobre lo que representa)
 
-    // Operar sobre el valor de la macro
-    //---------------------------------------
-    int resultado = NUM_MAX_LINES * 10;                                                                 // Podemos operar sobre la macro (sobre lo que representa)
-    cout << " " << resultado;
+    int resultado = NUM_MAX_LINES * 10;
+    cout << "\n  int resultado = NUM_MAX_LINES * 10; "
+         << "\n  resultado :... " << resultado;
 
 
     // Utilización de la macro maximo(a, b)

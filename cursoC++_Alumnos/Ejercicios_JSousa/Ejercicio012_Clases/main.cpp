@@ -144,35 +144,41 @@ class Hipotetica {
 //*
 //*
 //****************************************************************
-int main()
-{
+int main() {
+
+    //Asigna la información local del entorno
+    //--------------------------------------------
+    setlocale(LC_ALL, "");  // Acentos, moneda, formato de hora etc., la del entorno por defecto
+
 
     // Distintas formas de declaración/asignación
     //-------------------------------------------------
     Hipotetica hipotetica (20.0);
-    Persona otro("Carlos", "57957964G", 14000.0);                  // Esto es lo mismo que esto:    Persona otro = Persona("Carlos", "2345", 18000);
-    Persona otroMas;                                        // En este caso es llamado el constructor por defecto
-    otroMas.setNombre("Juan");
-    otroMas.setDni("49347942T");
-    otroMas.setSalario(20000.0);
-    Persona *yo = new Persona("Manuel", "85463498N", 20000.0);    // En este caso creamos objeto persona apuntado por el puntero "yo"
+    Persona otro("Carlos", "57957964G", 14000.0);                   // Esto es lo mismo que esto:    Persona otro = Persona("Carlos", "2345", 18000);
+    Persona otro2;                                                // En este caso es llamado el constructor por defecto
+    otro2.setNombre("Juan");
+    otro2.setDni("49347942T");
+    otro2.setSalario(20000.0);
+    Persona *yo = new Persona("Manuel", "85463498N", 20000.0);      // En este caso creamos objeto persona apuntado por el puntero "yo"
 
 
     // invocar miembros de las clases (mostrar datos)
     //--------------------------------------------------
-    cout << "\n " << otro.getDni() << "\t"  << otro.getNombre() << "\t"  << otro.getSalario();
-    cout << "\n " << otroMas.getDni() << "\t"  << otroMas.getNombre() << "\t"  << otroMas.getSalario();
-    cout << "\n " << yo->getDni() << "\t"  << yo->getNombre() << "\t"  << yo->getSalario();
+    cout << "\n\n\n  ------- Declaramos un tipo \"Hipoteca hipoteca\" y los tipos \"Persona otro\" y \"Persona otro2\" ------- "
+         << "\n----------------------------------------------------------------------------------------------------"
+         << "\n  otro.getDni() :... " << otro.getDni() <<  "    otro.getNombre() :... "  << otro.getNombre() <<  "    otro.getSalario() :... "  << otro.getSalario()
+         << "\n otro2.getDni() :... " << otro2.getDni() << "   otro2.getNombre() :... "  << otro2.getNombre() << "     otro2.getSalario() :... "  << otro2.getSalario()
+         << "\n   yo->getDni() :... " << yo->getDni() <<   "     yo->getNombre() :... "  << yo->getNombre() <<   "     yo->getSalario() :... "  << yo->getSalario();
 
 
     // Subimos el sueldo con hipotetica.subirSueldo() y mostramos nuevos datos
     //------------------------------------------------------------------------------
     hipotetica.subirSueldo(&otro);
-    cout << "\n\n\n  ------- después de subir el sueldo ------- "
-         << "\n--------------------------------------------";
-    cout << "\n " << otro.getDni() << "\t"  << otro.getNombre() << "\t"  << otro.getSalario();
-    cout << "\n " << otroMas.getDni() << "\t"  << otroMas.getNombre() << "\t"  << otroMas.getSalario();
-    cout << "\n " << yo->getDni() << "\t"  << yo->getNombre() << "\t"  << yo->getSalario();
+    cout << "\n\n\n  ------- después de subir el sueldo \"hipotetica.subirSueldo(&otro)\" ------- "
+         << "\n----------------------------------------------------------------------------------------------------"
+         << "\n  otro.getDni() :... " << otro.getDni() <<  "    otro.getNombre() :... " << otro.getNombre() <<  "    otro.getSalario() :... "  << otro.getSalario()
+         << "\n otro2.getDni() :... " << otro2.getDni() << "   otro2.getNombre() :... " << otro2.getNombre() << "     otro2.getSalario() :... "  << otro2.getSalario()
+         << "\n   yo->getDni() :... " << yo->getDni() <<   "     yo->getNombre() :... " << yo->getNombre() <<   "     yo->getSalario() :... "  << yo->getSalario();
 
 
     // Como siempre liberamos la memoria asignada dinámicamente
@@ -180,6 +186,6 @@ int main()
     delete yo;  //
 
 
-    cout << endl;
+    cout << "\n\n" << endl;
     return 0;
 }

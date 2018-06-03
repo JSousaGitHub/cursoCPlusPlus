@@ -21,50 +21,48 @@ Complejo operator + (Complejo , Complejo);
 
 int main() {
 
+    // Asigna la información local del entorno
+    //--------------------------------------------
+    setlocale(LC_ALL, "");  // Acentos, moneda, formato de hora etc., la del entorno por defecto
+
+
     // Declara e inicializa dos números complejos
     //------------------------------------------------
     Complejo num1 = {3, -7};
     Complejo num2 = {7, 4};
 
 
-    // Muestra los dos números complejos
+    // Muestra la suma de dos números complejos
     //---------------------------------------------
-    cout << "\n ----- estos son dos números complejos ----- \n\n   ";
+    cout << "\n ----- Dos números complejos Complejo num1 = {3, -7};  Complejo num2 = {7, 4}; ----- \n\n       ";
     imprimir_complejo(num1);
-    cout << "\n   ";
+    cout << "            ( imprimir_complejo(num1); )\n       ";
     imprimir_complejo(num2);
-
-
-    // Muestra la suma de los complejos
-    //-------------------------------------
-    cout << "\n\n ------ Su suma es:  ------\n\n   ";
+    cout << "            ( imprimir_complejo(num2); )\n   --------------\n      ";
     imprimir_complejo(num1 + num2);
+    cout << "            ( Operador + sobrecargado ) imprimir_complejo(num1 + num2);";
 
 
     // asigna nuevos valores
     //-------------------------
-    num1.real = 4;
-    num1.imaginaria = 8;
-    num2.real = 9;
-    num2.imaginaria = 12;
+    cout << "\n\n\n ---- asignamos nuevos valores ---- \n";
+    cout << "\n    num1.real = 4;"; num1.real = 4;
+    cout << "\n    num1.imaginaria = 8;"; num1.imaginaria = 8;
+    cout << "\n    num2.real = 9;"; num2.real = 9;
+    cout << "\n    num2.imaginaria = 12;"; num2.imaginaria = 12;
 
 
-    // Muestra los nuevos valores
-    //--------------------------------
-    cout << "\n\n ------ Estos son los nuevos valores de los complejos ------\n\n   ";
+    // Muestra la nueva suma de dos números complejos
+    //--------------------------------------------------
+    cout << "\n\n\n ----- Esta es la nueva suma -----\n\n       ";
     imprimir_complejo(num1);
-    cout << "\n   ";
+    cout << "\n       ";
     imprimir_complejo(num2);
-
-
-    // Muestra la suma de los neuvos complejos
-    //--------------------------------------
-    cout << "\n\n ------ Su suma es:  ------\n\n   ";
+    cout << "\n   --------------\n      ";
     imprimir_complejo(num1 + num2);
-    cout << "\n\n";
 
 
-    cout << endl;
+    cout<< "\n" << endl;
     return 0;
 
 }

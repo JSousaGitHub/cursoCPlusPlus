@@ -136,20 +136,20 @@ int main()
 
     // Declarar y utilizar la clase Persona
     //-----------------------------------------
-    Persona persona1 ("Carlos", "952O5850T");
-    cout << "\n\n   ----- Solo con la clase persona -----\n "
-         << "DNI: " << persona1.getDni()
-         << "\n Nombre: " << persona1.getNombre() << endl;
+    Persona persona ("Carlos", "952O5850T");
+    cout << "\n\n ----- La clase persona - Persona persona (\"Carlos\", \"952O5850T\"); -----"
+         << "\n      persona.getDni() :... " << persona.getDni()
+         << "\n   persona.getNombre() :... " << persona.getNombre() << endl;
 
 
     // Declarar y utilizar la clase Empleado que contiene la clase Persona
     //------------------------------------------------------------------------
-    Empleado empleado1 ("Carmen", "43543865R", 100000, "A3585BC85267");
-    cout << "\n\n   ----- Con la clase Empleado y la clase Persona como base -----\n "
-         << "DNI: " << empleado1.getDni()
-         << "\n Nombre: " << empleado1.getNombre()
-         << "\n Salario: " << empleado1.getSalario()
-         << "\n seguridad social: " << empleado1.getSeguridadSocial() << endl;
+    Empleado empleado ("Carmen", "43543865R", 100000, "A3585BC85267");
+    cout << "\n\n ----- La clase Empleado: public Persona - Empleado empleado (\"Carmen\", \"43543865R\", 100000, \"A3585BC85267\") -----"
+         << "\n               empleado.getDni() :... " << empleado.getDni()
+         << "\n            empleado.getNombre() :... " << empleado.getNombre()
+         << "\n           empleado.getSalario() :... " << empleado.getSalario()
+         << "\n   empleado.getSeguridadSocial() :... " << empleado.getSeguridadSocial() << endl;
 
     cout << endl;
     return 0;

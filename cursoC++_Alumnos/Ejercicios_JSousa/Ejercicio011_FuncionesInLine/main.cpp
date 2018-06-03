@@ -7,6 +7,12 @@ inline void mi_funcion_inline() {cout << "\nInstrucciones de la función InLine";
 
 int main() {
 
+    //Asigna la información local del entorno
+    //--------------------------------------------
+    setlocale(LC_ALL, "");  // Acentos, moneda, formato de hora etc., la del entorno por defecto
+
+
+    // Declara varias funciones seguidas que el compilador sustituirá literalemnte por lo que hay en su implementación
     mi_funcion_inline();
     mi_funcion_inline();
     mi_funcion_inline();

@@ -12,6 +12,11 @@ void funcion_parametros_referencia (int *numero, double *salario, string *nombre
 
 int main() {
 
+    // Asigna la información local del entorno
+    //--------------------------------------------
+    setlocale(LC_ALL, "");  // Acentos, moneda, formato de hora etc., la del entorno por defecto
+
+
     // Declarar/Inicializar variables locales
     //--------------------------------------------
     int numero = 10;

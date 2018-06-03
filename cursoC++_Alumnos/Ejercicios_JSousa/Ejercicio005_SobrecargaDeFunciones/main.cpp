@@ -38,11 +38,11 @@ int mayor(int buffer, int num2, int num3) {
 
 
 
-double mayor(double num1, double num2, double num3) {
+double mayor(double buffer, double num2, double num3) {
 
-    if (num1 > num2 && num1 > num3) return num1;
-    if (num2 > num1 && num2 > num3) return num2;
-    return num3;
+    if (buffer < num2) buffer = num2;
+    if (buffer < num3) return num3;
+    return num2;
 
 }
 

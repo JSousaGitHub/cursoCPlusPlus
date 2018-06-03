@@ -12,9 +12,9 @@ int main() {
     //-------------------------------------------
     int *ptrInt = new int;
     *ptrInt = 3000;
-    cout << "\n-------------------------------------------------------------"
+    cout << "\n----------------------------------------------"
          << "\n   int *ptrInt = new int;     *ptrInt = 3000;\n"
-         << "-------------------------------------------------------------"
+         << "----------------------------------------------"
          << "\n\n Valor al que apunta ptrInt:...  " << *ptrInt << "   -  Contenido de ptrInt:...  "  << ptrInt << endl;
 
 
@@ -22,9 +22,9 @@ int main() {
     // Asigna un nuevo valor a la posición apuntada y lo muestra
     //--------------------------------------------------------------
     *ptrInt = 70000;
-    cout << "\n-------------------------------------------------------------"
+    cout << "\n--------------------"
          << "\n   *ptrInt = 70000;\n"
-         << "-------------------------------------------------------------"
+         << "--------------------"
          << "\n\n Valor al que apunta ptrInt:...  " << *ptrInt << "   -  Contenido de ptrInt:...  "  << ptrInt<< endl;
 
 
@@ -34,9 +34,9 @@ int main() {
     delete ptrInt;      // liberamos la memoria para que no que sin apuntar (inutilizada en el programa)
     int num = 1000;
     ptrInt = &num;      // Utilizamos el puntero para apuntar a otra posición (la de "num")
-    cout << "\n-------------------------------------------------------------"
+    cout << "\n---------------------------------------------------------"
          << "\n   delete ptrInt;     int num = 1000;     ptrInt = &num;\n"
-         << "-------------------------------------------------------------"
+         << "---------------------------------------------------------"
          << "\n\n Valor al que apunta ptrInt:...  " << *ptrInt << "   -  Contenido de ptrInt:...  "  << ptrInt << endl;
 
 
@@ -48,11 +48,11 @@ int main() {
     ptrInt2[1] = 2;     // |  Asigna sus valores
     ptrInt2[2] = 3;     // <
 
-    cout << "\n------------------------------------------------------------------------------------"
-         << "\n   int *ptrInt2 = new int(4);  ptrInt2[0] = 1;  ptrInt2[1] = 2  ptrInt2[2] = 3;\n"
-         << "------------------------------------------------------------------------------------"
+    cout << "\n---------------------------------------------------------------------------------"
+         << "\n   int *ptrInt2 = new int(4);  ptrInt2[0] = 1;  ptrInt2[1] = 2;  ptrInt2[2] = 3;\n"
+         << "---------------------------------------------------------------------------------"
          << "\n\n Valores del array\n"
-         << "     ptrInt2[0] ... " << ptrInt2[0] << "   ptrInt2[1] ... " << ptrInt2[1] << "   ptrInt2[2] ... " << ptrInt2[2] << endl;      // Muestra sus valores
+         << "     ptrInt2[0] :... " << ptrInt2[0] << "   ptrInt2[1] :... " << ptrInt2[1] << "   ptrInt2[2] :... " << ptrInt2[2] << endl;      // Muestra sus valores
 
 
     // Liberamos todas las asignaciones dinámicas

@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1527538371 source:c:\users\tarde\desktop\curso c++\ejercicios\ejercicio020_platillasdeclass\main.cpp
+	<iostream>
+	<Lista.h>
+
+1527537697 source:c:\users\tarde\desktop\curso c++\ejercicios\ejercicio020_platillasdeclass\src\lista.cpp
+	"Lista.h"
+
+1527539331 c:\users\tarde\desktop\curso c++\ejercicios\ejercicio020_platillasdeclass\include\lista.h
+	<iostream>
+	<Padre.h>
+
+1527535929 c:\users\tarde\desktop\curso c++\ejercicios\ejercicio020_platillasdeclass\include\padre.h
+	<iostream>
+
+1527535730 source:c:\users\tarde\desktop\curso c++\ejercicios\ejercicio020_platillasdeclass\src\padre.cpp
+	"Padre.h"
+
+1527535602 source:c:\users\tarde\desktop\curso c++\ejercicios\ejercicio020_platillasdeclass\src\hijo.cpp
+	"Hijo.h"
+
+1527537003 c:\users\tarde\desktop\curso c++\ejercicios\ejercicio020_platillasdeclass\include\hijo.h
+
+1527970662 source:e:\curso c++\ejercicios\ejercicio020_platillasdeclass\main.cpp
+	<iostream>
+	<Lista.h>
+	<Padre.h>
+
+1527872072 e:\curso c++\ejercicios\ejercicio020_platillasdeclass\include\lista.h
+	<iostream>
+	<stdlib.h>
+	<Padre.h>
+
+1527800802 e:\curso c++\ejercicios\ejercicio020_platillasdeclass\include\padre.h
+	<iostream>
+
+1527611918 source:e:\curso c++\ejercicios\ejercicio020_platillasdeclass\src\hijo.cpp
+	"Hijo.h"
+
+1527611970 e:\curso c++\ejercicios\ejercicio020_platillasdeclass\include\hijo.h
+
+1527794714 source:e:\curso c++\ejercicios\ejercicio020_platillasdeclass\src\lista.cpp
+	"Lista.h"
+
+1527800896 source:e:\curso c++\ejercicios\ejercicio020_platillasdeclass\src\padre.cpp
+	"Padre.h"
+

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <sstream>
 
 using namespace std;
 
@@ -67,7 +68,7 @@ class Ordenador {
     //=
     //================================================================
     private: string marca;
-    private: Pantalla pantalla;
+    private: Pantalla pantalla;         // Ordenador contendrá su su tipo "Pantalla"
 
 
     //================================================================
@@ -78,7 +79,7 @@ class Ordenador {
     public: Ordenador() {
 
         marca = "";
-        //pantalla = nullptr;
+        pantalla = Pantalla();
 
     }
 
@@ -115,7 +116,7 @@ class Ordenador {
     }
 
 
-}; //Pantalla {
+}; //Ordenador {
 
 
 
@@ -124,8 +125,12 @@ class Ordenador {
 //*
 //*
 //****************************************************************
-int main()
-{
+int main() {
+
+    //Asigna la información local del entorno
+    //--------------------------------------------
+    setlocale(LC_ALL, "");  // Acentos, moneda, formato de hora etc., la del entorno por defecto
+
 
     // declara e inicializa un tipo Pantalla
     //---------------------------------------------
@@ -143,6 +148,6 @@ int main()
    cout << ordenador1.toString();
 
 
-    cout <<  endl;
+    cout << "\n\n" <<  endl;
     return 0;
 }
